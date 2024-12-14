@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atom.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>|: REGISTER FORM :|</title>
+</head>
+<body>
+    <h1>Register form</h1>
+
+    <form action="connect.php" method="post">
+        <div id="A" class="Ace">
+            <label for="username">Username:</label>
+            <p><input type="text" id="username" name="username" required 
+                placeholder="username"></p>
+        </div>
+
+        <div id="B" class="Beas">
+            <label for="useremail">Email:</label>
+            <p><input type="email" id="useremail" name="useremail" required placeholder="useremail"></p>
+        </div>
+        
+        <div id="C" class="Ceas">
+            <label for="userpassword">Password:</label>
+            <p><input type="password" id="userpassword" name="userpassword" required placeholder="userpassword" required minlength="7"></p>
+            <input type="checkbox" id ="chb">Show password
+            <script>
+                const userpassword= document.getElementById("userpassword");
+                const chb = document.getElementById("chb");
+
+                chb.onchange = function(e){
+                    userpassword.type = chb.checked? "text": "password";
+                };
+            </script>
+        </div><br>
+        
+        <div id="D" class="Deas">
+            <label for="userage">Age:</label>
+            <p><input type="number" id="userage" name="userage" required placeholder="age" required minlength="3"></p>
+        </div>
+
+        <div id="E" class="Ease">
+            <label for="userdob">Date of Birth:</label>
+            <p><input type="date" id="userdob" name="userdob"></p>
+        </div>    
+        
+        <div id="F" class="Fees">
+            <label for="userphone">Phone:</label>
+            <p><input type="tel" id="userphone" name="userphone" placeholder="+233(0)-246-987-69-74"></p> 
+        </div>
+
+        <div id = "f" class="file">
+            <label for="fi">Select file:
+                <p><input id = "fi" type="file" multiples></p>
+            </label>
+        </div>
+        
+        <div id="G" class="Gees">
+            <input type="submit" value="Submit" onclick="alert('Your records have been submitted successfully!!')">
+        </div>
+
+
+    </form>
+</body>
+</html>

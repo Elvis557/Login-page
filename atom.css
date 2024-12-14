@@ -1,0 +1,65 @@
+body{
+    padding: 20px;
+    background: url(https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial;
+}
+
+#userpassword{
+    background-color: white;
+}
+
+    
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;  
+    border: 1px solid rgb(90, 83, 83);
+    background: linear-gradient(rgb(211, 58, 152),pink,rgb(138, 49, 98));
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+ 
+}
+
+h1{
+    text-align: center;
+    color: rgb(19, 13, 13);
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="tel"]{
+    width: calc(100% - 20px);
+    padding: 10px ;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body{
+    border: 7px
+}
